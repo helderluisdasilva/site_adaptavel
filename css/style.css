@@ -8,6 +8,7 @@
 }
 
 body{
+    box-sizing: border-box;
     font-size:1.1em;
     background-color:#DDD;
     font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;
