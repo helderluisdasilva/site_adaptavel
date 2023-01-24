@@ -43,6 +43,7 @@ nav{
 
 nav > .material-icons{
     display:block;
+    background-color: #777;
     color:#FFF;
     padding:10px 0 9px 0;
     text-align:center;
