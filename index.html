@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Site Adaptável</title>
+</head>
+<body onresize="ajustarMenu();">
+    <header>
+        <h1>Site Adaptável</h1>
+    </header>
+    <nav>
+        <span class="material-icons" onclick="abrirFecharMenu();">menu</span>
+        <menu>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+            <li><a href="#">Opção 6</a></li>
+        </menu>
+    </nav>
+    <main>
+        <section>
+            <h1>Notícias</h1>
+            <article>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, cum molestiae, culpa recusandae assumenda commodi consequatur pariatur quae alias vitae tempore nobis voluptatum nulla aliquam sint dolorem quam suscipit explicabo accusantium eius ullam corrupti voluptate. Rerum voluptatum cupiditate atque officiis necessitatibus laborum facilis a, nam pariatur unde autem id vero eaque ratione iste ad, hic eius doloribus deleniti animi! Vel quam qui nesciunt, deserunt corrupti dolores reiciendis labore temporibus atque quod consequatur repudiandae facilis. Deserunt doloribus illo dolorum quis minima beatae vero ex excepturi impedit necessitatibus nam, optio consequuntur eligendi repellat? Quis soluta in inventore porro similique quos distinctio ipsa.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure excepturi nisi id placeat nobis vel inventore accusamus quia reiciendis temporibus non sapiente natus sequi nostrum, ducimus officia in maxime quo fuga fugit eius ad doloribus!</p>
+            </article>
+
+            <article>
+                <h2>Lorem Ipsum 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut non quod excepturi, sit quaerat, distinctio laudantium quibusdam dolorem minus cumque eum rerum commodi fugiat dolorum ea quas veritatis impedit voluptate similique alias? Mollitia voluptas culpa, earum repellendus non quisquam, a animi architecto, nulla minus dolorum commodi! Sunt maiores et ad similique necessitatibus. Debitis, dolores ratione?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, debitis. Nesciunt cum optio, molestias voluptates illo voluptatem quis animi esse a aspernatur qui eligendi sequi laboriosam nihil dolores id dolorum! Nostrum fugit mollitia libero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reiciendis, earum porro accusamus iusto facere quibusdam illo saepe et a dignissimos ratione harum possimus maiores blanditiis id debitis voluptatibus tenetur! Magnam totam, sapiente dolore natus labore dolor numquam aut vero quasi magni assumenda quam est? Assumenda temporibus libero, eaque, iure harum sed repellat saepe quibusdam vero totam ipsam consequatur ab, voluptates asperiores maiores aspernatur. Recusandae, rerum necessitatibus, quidem reprehenderit eum quas expedita sunt accusantium blanditiis, possimus veniam amet est autem velit maiores numquam incidunt hic molestiae quos ullam. Placeat at debitis repudiandae consequuntur maxime laudantium incidunt dolorem quae quo non ipsam, modi a perferendis laboriosam rerum iste cupiditate eligendi. Blanditiis fugit itaque, neque iste nostrum provident eveniet ducimus. Temporibus, omnis recusandae? Eligendi, enim. Minus eos assumenda commodi eum veritatis sint accusamus nisi facere, id quis.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Site Adaptável &copy; - Site Criado por Helder Luis
+    </footer>
+    <script>
+        function ajustarMenu(){
+            menu = document.querySelector("menu");
+            if(window.innerWidth >= 600){
+                menu.style.display = "block";
+            }else{
+                menu.style.display = "none";
+            }
+        }
+
+        function abrirFecharMenu(){
+            menu = document.querySelector("menu");
+            if(menu.style.display == "block"){
+                menu.style.display = "none";
+            }else{
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
