@@ -7,8 +7,13 @@
     padding:0;
 }
 
-body{
+html, body{
+    width:100vw;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
     font-size:1.1em;
     background-color:#DDD;
     font-family:'Roboto Condensed', Arial, Helvetica, sans-serif;
